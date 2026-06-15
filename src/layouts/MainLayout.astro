@@ -11,12 +11,21 @@ const { title } = Astro.props;
     <style>body { font-family: 'Assistant', sans-serif; }</style>
 </head>
 <body class="bg-stone-50 text-stone-900">
-    <header class="bg-orange-950 text-white p-5 shadow-xl text-center">
-        <h1 class="text-2xl font-bold">תוכנית בנייה בעץ 🔨</h1>
+    <header class="bg-orange-950 text-white p-6 shadow-xl">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-black italic">תוכנית בנייה בעץ 🔨</h1>
+            <nav class="hidden md:flex gap-6 font-bold">
+                <a href="/" class="hover:text-orange-200 text-lg">בית</a>
+                <a href="/about" class="hover:text-orange-200 text-lg">אודות</a>
+            </nav>
+        </div>
     </header>
     <main><slot /></main>
-    <footer class="bg-stone-900 text-stone-500 p-10 mt-20 text-center">
-        <p>© 2024 DIY Wood Plans</p>
+    <footer class="bg-stone-900 text-stone-500 p-12 mt-20 text-center">
+        <div class="container mx-auto">
+            <p class="text-lg mb-2">DIY Free Wood Plans</p>
+            <p class="text-sm">© 2024 כל הזכויות שמורות לבונים בעץ</p>
+        </div>
     </footer>
 </body>
 </html>
