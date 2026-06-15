@@ -1,0 +1,10 @@
+{
+  "name": "diy-wood-plans",
+  "type": "module",
+  "scripts": { "build": "astro build" },
+  "dependencies": {
+    "astro": "latest",
+    "tailwindcss": "^3.4.0",
+    "@astrojs/tailwind": "latest"
+  }
+}

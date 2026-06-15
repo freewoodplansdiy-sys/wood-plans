@@ -1,0 +1,10 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+export const frontmatter = { title: "ספסל גינה קלאסי", description: "תוכנית בנייה פשוטה ומהירה לספסל עץ" };
+---
+<MainLayout title={frontmatter.title}>
+    <div class="max-w-4xl mx-auto py-16 px-6 bg-white my-10 shadow-xl rounded-3xl text-right">
+        <h1 class="text-4xl font-black mb-6 text-orange-950">{frontmatter.title}</h1>
+        <p class="text-lg leading-relaxed border-r-4 border-orange-500 pr-4 italic">התוכנית הראשונה שלנו באוויר!</p>
+    </div>
+</MainLayout>
